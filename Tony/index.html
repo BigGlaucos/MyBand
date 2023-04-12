@@ -19,19 +19,28 @@
                 <img src="./img/Pfp.svg" class="pfp" alt="">
             </nav>
             <header>
-                <section class="about">
+                <section class="about" id="about">
                     <div class="texts">
                         <div>
                             <p class="headTitle">The Neightbourhood</p>
-                            <p class="headP">The Neighbourhood é uma banda americana de indie rock formada em Newbury Park, Califórnia em
+                            <p class="headP" id="smallText">The Neighbourhood é uma banda americana de indie rock formada em Newbury Park, Califórnia em
                                 2011. A banda é composta pelo vocalista Jesse Rutherford, os guitarristas Jeremy Freedman e
                                 Zach... <br>
-                                <span class="more">
+                                <span class="more" onclick="moreText()">
                                     MAIS
                                 </span>
                             </p>
+                            <p class="headP headPMenos" id="fullText">The Neighbourhood é uma banda americana de indie rock formada em Newbury Park, Califórnia em 2011. A banda é composta pelo vocalista Jesse Rutherford, os guitarristas Jeremy Freedman e Zach Abels, e o baixista Mikey Margott.
+                                Depois de lançar três EPs, I'm Sorry..., The Love Collection e Thank You, eles lançaram seu primeiro álbum completo, I Love You, em 23 de abril de 2013, pela Columbia Records. Em novembro de 2014, eles lançaram uma mixtape intitulada #000000 & #FFFFFF. O segundo álbum da banda, Wiped Out! foi lançado em 30 de outubro de 2015, tendo como cargo chefe a canção "R. I. P. 2 My Youth ".
+                                Em setembro de 2017, foi lançado o extended play Hard, com cinco faixas inéditas. Em janeiro de 2018 foi lançado o EP To Imagine com mais cinco músicas inéditas, conectando os dois EPs juntos no dia 24 de janeiro de 2018, eles lançaram um video intitulado "Hard to Imagine", com músicas de ambos os EPs.
+                                O terceiro álbum da banda de nome homônimo The Neighbourhood foi lançado em 9 de março de 2018 incluindo algumas músicas lançadas nos EPs Hard e To Imagine meses antes.<br>
+                                <span class="more" onclick="lessText()">
+                                    MENOS
+                                </span>
+                            </p>
+
                         </div>
-                        <div class="btnListen">
+                        <button class="btnListen">
                             <p class="ouvir">OUVIR</p>
                             <div class="streamings">
                                 <a href="https://open.spotify.com/artist/77SW9BnxLY8rJ0RciFqkHh?autoplay=true" target="_blank" class="musicAppIco">
@@ -44,7 +53,7 @@
                                     <img src="./img/ytMusic.svg" alt="">
                                 </a>
                             </div>
-                        </div>
+                        </button>
                     </div>
                 </section>
             </header>

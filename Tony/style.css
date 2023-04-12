@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -83,6 +84,9 @@ main {
     background-attachment: fixed;
     /* height: 100vh; */
 }
+button{
+    cursor: pointer;
+}
 
 .navbar {
     width: 100%;
@@ -130,6 +134,7 @@ main {
     background: linear-gradient(180deg, rgba(12, 12, 12, 0.5) 20%, rgb(12, 12, 12) 90%);
     display: flex;
     align-items: end;
+    text-align: justify;
     /* padding-bottom: 50px; */
 }
 
@@ -154,10 +159,15 @@ main {
     /* or 133% */
 }
 
+.headPMenos{
+    display: none;
+}
+
 .more {
     font-weight: 500;
     font-size: var(--paragrafo);
     line-height: 21px;
+    cursor: pointer;
     /* or 140% */
 }
 
@@ -167,10 +177,16 @@ main {
     padding: 10px 10px;
     display: flex;
     justify-content: space-around;
+    gap: 10px;
     align-items: center;
     background: rgba(243, 243, 243, 0.95);
+    border: 0.5px solid #46464600;
     border-radius: 20px;
     color: #0C0C0C;
+}
+.btnListen:hover{
+    box-shadow: 7px 5px 56px -14px #4e4e4e;
+    border: 0.5px solid #464646;
 }
 .ouvir{
     font-weight: 600;
