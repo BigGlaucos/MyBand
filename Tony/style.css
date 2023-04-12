@@ -16,23 +16,53 @@
     background-color: #272727;
     border-radius: 20px;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 700px) {
     :root{
         --titulo--head:35px;
         --paragrafo:15px;
         --line-titulo:65px;
         --line-paragrafo:25px;
     }
+    .about{
+        height: 100vh;
+        padding: 0 10px;
+    }
+    .texts{
+        width: 676px;
+        align-items: center;
+    }
+    .texts .headTitle{
+        text-align: center;
+    }
+    .texts .headP{
+        text-align: justify;
+    }
+}
+@media screen and (min-width: 700px) {
+    :root{
+        --titulo--head:35px;
+        --paragrafo:15px;
+        --line-titulo:65px;
+        --line-paragrafo:25px;
+    }
+    .about{
+        height: 100vh;
+        padding-left: 10%;
+    }
     .texts{
         width: 676px;
     }
 }
-@media screen and (min-width: 1301px) {
+@media screen and (min-width: 1501px) {
     :root{
         --titulo--head:55px;
         --paragrafo:18px;
         --line-titulo:80px;
         --line-paragrafo:28px;
+    }
+    .about{
+        height: 80vh;
+        padding-left: 10%;
     }
     .texts{
         width: 760px;
@@ -44,30 +74,30 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     background-image: url(./img/theNeighHead.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    height: 100vh;
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;*/
+    background-attachment: fixed;
+    /* height: 100vh; */
 }
 
 .navbar {
     width: 100%;
     height: 66px;
-    top: 0px;
-    position: sticky;
+    top: 0;
+    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(12, 12, 12, 0.5);
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.3) 0%, rgba(12, 12, 12, 0) 100%);
     transition: background-color 0.5s ease-in-out;
 }
 .navbar.change{
-    background-color: rgba(12, 12, 12, 0.5);
-    backdrop-filter: blur(25px);
+    background: rgba(12, 12, 12, 0.6);
+    backdrop-filter: blur(50px);
 }
 .homeIcon{
     width: 40px;
@@ -88,24 +118,26 @@ main {
 
 }
 
-header {
-    top: 0;
-    height: 70vh;
-}
+/* header {
+    background-image: url(./img/theNeighHead.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 80vh;
+} */
 
 .about {
-    height: 70vh;
-    background: rgb(12, 12, 12);
-    background: linear-gradient(180deg, rgba(12, 12, 12, 0.5) 0%, rgba(12, 12, 12, 1) 89%);
+    background: linear-gradient(180deg, rgba(12, 12, 12, 0.5) 20%, rgb(12, 12, 12) 90%);
     display: flex;
     align-items: end;
-    padding-left: 10%;
+    /* padding-bottom: 50px; */
 }
 
 .texts {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 5rem;
 }
 
 
@@ -130,8 +162,9 @@ header {
 }
 
 .btnListen {
-    width: 202px;
-    height: 44px;
+    max-width: 202px;
+    /* height: 44px; */
+    padding: 10px 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -145,9 +178,16 @@ header {
 }
 .streamings{
     display: flex;
+    align-items: center;
     gap: 10px;
 }
+.musicAppIco{
+    display: flex;
+    align-items: center;
+}
 .musicas {
-    height: 500px;
+    padding-left: 10%;
+    padding-top: 2rem;
+    height: 2000px;
     background-color: rgb(12, 12, 12);
 }
