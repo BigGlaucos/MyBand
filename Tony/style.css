@@ -17,58 +17,79 @@
     background-color: #272727;
     border-radius: 20px;
 }
+
 @media screen and (max-width: 700px) {
-    :root{
-        --titulo--head:35px;
-        --paragrafo:15px;
-        --line-titulo:65px;
-        --line-paragrafo:25px;
+    :root {
+        --titulo--head: 35px;
+        --paragrafo: 15px;
+        --line-titulo: 65px;
+        --line-paragrafo: 25px;
     }
-    .about{
+
+    .about {
         height: 100vh;
         padding: 0 10px;
     }
-    .texts{
+
+    .texts {
         width: 676px;
         align-items: center;
     }
-    .texts .headTitle{
+
+    .texts .headTitle {
         text-align: center;
     }
-    .texts .headP{
+
+    .texts .headP {
         text-align: justify;
     }
-}
-@media screen and (min-width: 700px) {
-    :root{
-        --titulo--head:35px;
-        --paragrafo:15px;
-        --line-titulo:65px;
-        --line-paragrafo:25px;
+    .musicVideo{
+        padding-left: 10px;
     }
-    .about{
+}
+
+@media screen and (min-width: 700px) {
+    :root {
+        --titulo--head: 35px;
+        --paragrafo: 15px;
+        --line-titulo: 65px;
+        --line-paragrafo: 25px;
+    }
+
+    .about {
         height: 100vh;
         padding-left: 10%;
     }
-    .texts{
+
+    .texts {
         width: 676px;
     }
-}
-@media screen and (min-width: 1501px) {
-    :root{
-        --titulo--head:55px;
-        --paragrafo:18px;
-        --line-titulo:80px;
-        --line-paragrafo:28px;
+    .musicVideo{
+        padding-left: 10%;
     }
-    .about{
+}
+
+@media screen and (min-width: 1501px) {
+    :root {
+        --titulo--head: 55px;
+        --paragrafo: 18px;
+        --line-titulo: 80px;
+        --line-paragrafo: 28px;
+    }
+    
+    .about {
         height: 80vh;
         padding-left: 10%;
     }
-    .texts{
+    
+    .texts {
         width: 760px;
     }
+    .musicVideo{
+        padding-left: 10%;
+    }
 }
+
 body {
     background-color: #0C0C0C;
     color: #fff;
@@ -84,7 +105,8 @@ main {
     background-attachment: fixed;
     /* height: 100vh; */
 }
-button{
+
+button {
     cursor: pointer;
 }
 
@@ -99,17 +121,21 @@ button{
     background: linear-gradient(180deg, rgba(17, 17, 17, 0.3) 0%, rgba(12, 12, 12, 0) 100%);
     transition: background-color 0.5s ease-in-out;
 }
-.navbar.change{
+
+.navbar.change {
     background: rgba(12, 12, 12, 0.6);
     backdrop-filter: blur(50px);
 }
-.homeIcon{
+
+.homeIcon {
     width: 40px;
 }
-.pfp{
+
+.pfp {
     border: 0.5px solid #464646;
     border-radius: 100px;
 }
+
 .navTitle {
     font-weight: 500;
     font-size: 22px;
@@ -159,7 +185,7 @@ button{
     /* or 133% */
 }
 
-.headPMenos{
+.headPMenos {
     display: none;
 }
 
@@ -184,26 +210,104 @@ button{
     border-radius: 20px;
     color: #0C0C0C;
 }
-.btnListen:hover{
+
+.btnListen:hover {
     box-shadow: 7px 5px 56px -14px #4e4e4e;
     border: 0.5px solid #464646;
 }
-.ouvir{
+
+.ouvir {
     font-weight: 600;
     font-size: 20px;
 }
-.streamings{
+
+.streamings {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.musicAppIco{
+
+.musicAppIco {
     display: flex;
     align-items: center;
 }
-.musicas {
-    padding-left: 10%;
+
+.musicVideo {
     padding-top: 2rem;
-    height: 2000px;
+    height: 90vh;
     background-color: rgb(12, 12, 12);
+}
+
+.tituloLegenda {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.musicVideo {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.musicas,
+.videos {
+    height: 200px;
+}
+.carrossel{
+    /* width: 90%; */
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   overflow-x: auto;
+   padding-right:2rem;
+   padding-bottom: 0.5rem;
+}
+.card1,.card2,.card3,.card4 {
+    min-width: 345px;
+    height: 109px;
+    background: #101010;
+    border: 0.5px solid #4E4E4E;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.textsCards p{
+    width: 100px;
+}
+
+.tituloCard {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.paragrafoCard {
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.cardV1,.cardV2,.cardV3,.cardV4 {
+    width: 345px;
+    height: 245px;
+    padding-top: 1px;
+    background: #101010;
+    border: 0.5px solid #4E4E4E;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.actionBar{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
