@@ -119,7 +119,7 @@ button {
     justify-content: space-around;
     align-items: center;
     background: linear-gradient(180deg, rgba(17, 17, 17, 0.3) 0%, rgba(12, 12, 12, 0) 100%);
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.8s ease-in-out;
 }
 
 .navbar.change {
